@@ -1,0 +1,125 @@
+/*            Footer               */
+
+footer {
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .boxFooter {
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #hex-grid .grid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(../imagens/fotos/grid.svg) repeat;
+    width: 100%;
+    min-height: 100vh;
+    z-index: 0;
+    background-size: 500px;
+    background-attachment: fixed;
+  }
+  #hex-grid .light {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background: linear-gradient(-45deg, rgb(187, 121, 0) 25%, rgba(0,0,0,1) 85%) no-repeat;
+    background-size: 200% 200%;
+    animation: backGradiente 10s ease infinite; 
+  }
+
+  @keyframes backGradiente {
+    0%{
+      background-position: 0 50%;
+    }
+    50%{
+      background-position: 100% 50%;
+    }
+    100%{
+      background-position: 0 50%;
+    }
+  }
+
+  .footerNome {
+    font-size: 50px;
+    font-family: "pac";
+    position: relative;
+    cursor: pointer;
+    transition: color 1s ease-in-out;
+    letter-spacing: 10px;
+    color: var(--cor-primaria);
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .footerNome::before {
+    content: var(--letra);
+    position: absolute;
+    filter: blur(15px);
+    font-weight: bold;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .redes-sociais {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100%;
+  }
+  .redes-sociais li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    height:100px;
+    
+    margin: 0 10px;
+    font-size: calc(20px + 1vw);
+    font-weight: bold;
+    list-style: none;
+    color: var(--cor-primaria);
+    border-radius: 20px;
+  }
+  .redes-sociais li a:hover{
+    animation: subir 0.5s ease alternate infinite;
+  }
+  .redes-sociais li a ion-icon{
+    font-size: 50px;
+    z-index: 1000;
+    
+  }
+  .redes-sociais li p{
+    width: 100%;
+    height: 40;
+    line-height: 100%;
+    padding: 10px;
+    color: var(--cor-primaria);
+    transition: 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .redes-sociais li p:hover{
+    border-radius: 20px;
+    background:var(--cor-primaria);
+    color: var(--cor-secundaria);
+  }
+  

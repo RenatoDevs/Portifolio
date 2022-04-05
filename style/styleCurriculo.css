@@ -1,0 +1,327 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.curriculo {
+  width: 90%;
+  max-width: 1200px;
+  min-height: 100vh;
+  background-color: aliceblue;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  box-shadow: 0 35px 55px rgb(0, 0, 0);
+  margin:10px;
+}
+.curriculo .esquerdo {
+  width: 100%;
+  min-width: 300px;
+  min-height: 120vh;
+  background: linear-gradient(
+    180deg,
+    rgb(85, 85, 85) 0%,
+    rgb(68, 68, 68) 74%
+  );
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+/* Minha Foto */
+.boxImgCv {
+  width: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 72, 0, 1) 0%,
+    rgb(194, 75, 1) 74%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 10px;
+  align-self: flex-start;
+}
+.boxImgCv img {
+  width: 90%;
+  height: 100%;
+  object-fit: cover;
+  box-shadow: 0 35px 55px rgb(0, 0, 0);
+}
+/*      Sobre mim        */
+.nomeCv  {
+  width: 100%;
+  min-height: 100px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  margin-top: -102px;
+  
+}
+.nomeCv  h1 {
+  color: #fff;
+}
+.nomeCv  h1:nth-child(1) {
+  font-size: 70px;
+  align-self: flex-start;
+}
+.nomeCv h1:nth-child(2) {
+  font-size: 40px;
+  align-self: center;
+}
+.nomeCv  h1:nth-child(3) {
+  font-size: 70px;
+  align-self: flex-end;
+}
+
+.nomeCv  h2 {
+  margin-top: 30px;
+  font-size: 35px;
+  text-align: center;
+  color: #fff;
+}
+.nomeCv  h2::after {
+  content: ' ';
+  width: 100%;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.61);
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/*       contatos      */
+
+.contatoCv {
+  width: 100%;
+  min-height: 80vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+  font-weight: 400;
+  position: relative;
+  padding: 20px;
+}
+.contatoCv .tituloEsquerdo{
+    font-size: 30px;
+}
+.contatoCv ul {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 20px 0;
+}
+.contatoCv ul li {
+  width: 100%;
+  background-color: rgb(77, 77, 77);
+  box-shadow: 0 35px 100px rgb(0, 0, 0);
+  text-align: center;
+  list-style: none;
+  margin: 10px 0;
+  font-size: 18px;
+  line-height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contatoCv ul li a {
+  text-decoration: none;
+  display: block;
+  width: 90%;
+  height: 100%;
+  color: #fff;
+}
+.contatoCv ul li .icon {
+    font-size: 30px;
+    display: flex;
+  }
+
+/*    Lado Direito */
+.direito {
+  width: 100%;
+  max-width: 800px;
+  min-height: 100vh;
+  background: #fff;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.tituloGeral{
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    text-align: center;
+    position: relative;
+    margin-top: 30px;
+}
+.tituloGeral::after{
+  content: ' ';
+  width: 90%;
+  height: 4px;
+  background-color: black;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.sobreCv{
+  width: 90%;
+  
+}
+.sobreCv p {
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 20px;
+  text-align: center;
+}
+.experiencia{
+  width: 90%;
+  
+}
+.experiencia p {
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 25px;
+  text-align: center;
+}
+.direito ul{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+}
+.direito ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    margin-top: 20px;
+    text-align: center;
+}
+.descItem{
+    width: 80%;
+    padding: 20px;
+}
+.periodo{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+.ano{
+    color: rgb(54, 54, 54);
+    font-size: 25px;
+    margin: 10px;
+    font-weight: bold;
+}
+.tituloDesc{
+    font-size: 30px;
+}
+.tituloLocal{
+    font-size: 25px;
+    margin: 15px 0;
+}
+.textDesc{
+    font-size: 18px;
+}
+
+.interesses{
+  background: linear-gradient(
+    180deg,
+    rgb(85, 85, 85) 0%,
+    rgb(68, 68, 68) 74%
+  );
+width: 100%;
+}
+
+.interesses ul{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 10px;
+}
+.interesses ul li{
+  margin: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  padding: 5px;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 20px;
+  background-color: rgb(129, 129, 129);
+}
+.interesses ul li img{
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  border-radius: 10px;
+  object-fit: contain;
+  background-color: rgb(150, 150, 150);
+}
+
+
+.boxCurriculo{
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items:center;
+  overflow: hidden;
+  position: relative;
+  background: var(--cor-primaria);
+  transition: transform 1.5s cubic-bezier(1, -0.50, 0.7, 0.7);
+  text-align: center;
+  padding: 0 0 150px 0 ;
+}
+
+
+.alongar{
+  height: 250vh;
+  
+}
+.boxCurriculo .btnAlongar{
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  background: var(--cor-primaria);
+  box-shadow: 0 35px 100px rgb(0, 0, 0);
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  color: #fff;
+  font-family: 'pac';
+}
+
+
+
+
+
+@media (max-width: 600px) {
+  .curriculo {
+    margin: 100px 10px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .alongar{
+    min-height:450vh;
+  }
+  .boxCurriculo{
+    transition: transform 1.5s cubic-bezier(1, -0.50, 0.7, 0.7);
+  }
+}

@@ -1,0 +1,171 @@
+@font-face {
+    font-family: "blah";
+    src: url('../fonts/Blah!.ttf') format("truetype");
+  }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  --cor-primaria: #ffa500;
+  --cor-secundaria: black;
+  --cor-titulo: red;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'blah';
+}
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  font-family: 'blash';
+}
+main {
+  width: 100%;
+  min-height: 100vh;
+}
+section{
+  width: 100%;
+  min-height: 100vh;
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.titulo {
+  font-size:calc(20px + 2vw);
+  font-weight: bold;
+  margin: 30px;
+  color: #fff;
+  text-align: center;
+  font-family: 'pac';
+  text-transform: uppercase;
+}
+
+/*        Sobre         */
+.sobre {
+  margin-top: -25vh;
+  padding-top: 20vh;
+  background: var(--cor-primaria);
+}
+.box-sobre {
+  width: 90%;
+  min-height: 400px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.sobre img {
+  flex: 1 1 400px;
+  max-width: 400px;
+  overflow: hidden;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.text-sobre {
+  font-size: 30px;
+  width: 100%;
+  max-width: 500px;
+  min-height: 530px;
+  line-height: 40px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 20px;
+  letter-spacing: 2px;
+  margin: 10px 0;
+  background: rgba(0, 0, 0, 0.397);
+}
+
+.text-sobre span {
+  color: var(--cor-primaria);
+}
+
+/*              Conhecimentos             */
+.conhecimento {
+  min-height: 80vh;
+  flex-direction: column;
+  background: var(--cor-secundaria);
+}
+.box-linguagem img {
+  width: 100px;
+}
+
+/*         Certificados        */
+.certificado {
+  background: var(--cor-secundaria);
+}
+.certificado .descProjeto {
+  background-color: var(--cor-secundaria);
+  color: #fff;
+}
+/*           Projetos          */
+
+.projetos {
+  background: var(--cor-primaria);
+}
+
+.box-itens {
+  width: 100%;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.item {
+  margin: 30px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  min-height: 100px;
+  flex: 1 1 400px;
+  max-width: 400px;
+  position: relative;
+  background: rgba(255, 255, 255, 0.603);
+  box-shadow: 0 8px 32px 10px rgba(0, 0, 0, 0.37);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.5s ease-in-out;
+}
+.item:hover{
+  transform: scale(1.3);
+}
+
+.imgProjeto img {
+  width: 100%;
+  max-height: 300px;
+  flex: 1 1 100px;
+}
+.descProjeto {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.subTitulo {
+  font-size: 30px;
+  margin: 10px;
+}
+.descProjeto .btMais {
+  width: 100%;
+  background:var(--cor-primaria);
+  text-decoration: none;
+  color: #ffffff;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 30px;
+  font-weight: bold;
+}

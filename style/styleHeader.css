@@ -1,0 +1,214 @@
+@font-face {
+  font-family: "pac";
+  src: url("../fonts/PAC-FONT.TTF") format("truetype");
+}
+header {
+  width: 100%;
+  min-height: 130vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 100;
+}
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 130vh;
+  background: var(--cor-secundaria);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+  z-index: -1;
+}
+.scroll {
+  width: 100px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 2;
+  position: relative;
+  background: url(../imagens/) repeat-y;
+  background-size: cover ;
+}
+
+.scroll img {
+  width: 100%;
+  animation: pular 1s cubic-bezier(1, -0.8, 0.7, 0.7) alternate infinite;
+  position: absolute;
+  top: 0;
+}
+.scroll::after {
+  content: " ";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.877);
+  border-radius: 50%;
+  filter: blur(15px);
+  animation: sombra 1s cubic-bezier(1, -0.80, 0.7, 0.7) alternate infinite;
+}
+
+@keyframes pular {
+  to {
+    transform: translateY(40px);
+  }
+  
+}
+
+@keyframes sombra {
+  to {
+    transform:scale(1.5);
+  }
+  
+}
+.neon {
+  width: 100%;
+  max-width: 1500px;
+  min-height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  margin: 10px;
+  margin-top: -150px;
+}
+.nome {
+  font-size: 40px;
+  font-family: "pac";
+  position: relative;
+  cursor: pointer;
+  transition: color 1s ease-in-out;
+  letter-spacing: 10px;
+}
+.nome::before {
+  content: var(--letra);
+  position: absolute;
+  filter: blur(15px);
+  font-weight: bold;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.nome:nth-child(1) {
+  color: var(--cor-titulo);
+  font-size: calc(16px + 1vw);
+  margin-bottom: -10px;
+  z-index: 10;
+  animation: piscando 2s infinite;
+  animation-delay: 0;
+}
+.nome:nth-child(2) {
+  color: var(--cor-primaria);
+  font-size: calc(40px + 2vw);
+  animation: piscando 2s infinite;
+  animation-delay: 500ms;
+}
+.nome:nth-child(3) {
+  color: var(--cor-titulo);
+  font-size: calc(10px + 2vw);
+  margin: -10px;
+  z-index: 10;
+  animation: piscando 2s infinite;
+  animation-delay: 700ms;
+}
+.nome:nth-child(4) {
+  color: var(--cor-primaria);
+  font-size: calc(40px + 2.5vw);
+  animation: piscando 2s infinite;
+  animation-delay: 300ms;
+}
+
+.nome:nth-child(5) {
+  color: var(--cor-titulo);
+  font-size: calc(10px + 2vw);
+  margin: -10px;
+  z-index: 10;
+  animation: piscando 3s forwards;
+  animation-delay: 700ms;
+}
+
+.redes-sociais {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100%;
+}
+.redes-sociais li a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  height:100px;
+  
+  margin: 0 10px;
+  font-size: calc(20px + 1vw);
+  font-weight: bold;
+  list-style: none;
+  color: var(--cor-primaria);
+  border-radius: 20px;
+}
+.redes-sociais li a:hover{
+  animation: subir 0.5s ease alternate infinite;
+}
+.redes-sociais li a ion-icon{
+  font-size: 50px;
+  z-index: 1000;
+  
+}
+.redes-sociais li p{
+  width: 100%;
+  height: 40;
+  line-height: 100%;
+  padding: 10px;
+  color: var(--cor-primaria);
+  transition: 1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.redes-sociais li p:hover{
+  border-radius: 20px;
+  background:var(--cor-primaria);
+  color: var(--cor-secundaria);
+}
+
+@keyframes subir {
+  to{
+    transform: translateY(-30px);
+  }
+  
+}
+
+@media (max-width: 550px) {
+  .nome:nth-child(1),
+  .nome:nth-child(3) {
+    margin: 5px;
+    z-index: 10;
+  }
+  .nome:nth-child(2)::before,
+  .nome:nth-child(4)::before {
+    align-self: center;
+  }
+}
+
+@keyframes piscando {
+  0% {
+    text-transform: uppercase;
+  }
+  5% {
+    text-transform: lowercase;
+  }
+  95% {
+    text-transform: uppercase;
+  }
+}
