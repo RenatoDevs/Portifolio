@@ -80,7 +80,7 @@ section:nth-child(even) {
 }
 
 .box-sobre img {
-  max-width: 300px;
+  max-width: 350px;
   overflow: hidden;
   object-fit: cover;
   border-radius: 20px;
@@ -138,7 +138,7 @@ section:nth-child(even) {
 .certificado .item {
   background-color: var(--cor-secundaria);
   color: #fff;
-  box-shadow: 0 0 20px white;
+  /* box-shadow: 0 0 20px white; */
 }
 
 /*           Projetos          */
