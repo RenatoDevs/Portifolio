@@ -2,13 +2,14 @@
 
 footer {
     width: 100%;
-    min-height: 80vh;
+    min-height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     position: relative;
-    background-color: rgb(0, 0, 0);
+    background-color: var(--cor-secundaria);
+    
   }
   
   .boxFooter {
@@ -18,8 +19,9 @@ footer {
     align-items: center;
     flex-direction: column;
   }
+
   .footerNome {
-    font-size: 50px;
+    font-size: 40px;
     font-family: "pac";
     position: relative;
     cursor: pointer;

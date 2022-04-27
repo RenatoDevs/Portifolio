@@ -23,6 +23,7 @@ certificados = [
         nome: 'Bootcamp  DevSuperior',
         imagem: 'dev-superior'
     },
+    
 
 ];
 

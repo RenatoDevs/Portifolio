@@ -59,7 +59,6 @@ header::before {
   }
   
 }
-
 @keyframes sombra {
   to {
     transform:scale(1.5);

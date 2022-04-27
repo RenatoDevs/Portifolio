@@ -1,89 +1,126 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
-}
-
 @font-face {
     font-family: "pac";
     src: url("../fonts/PAC-FONT.TTF") format("truetype");
-  }
-  header {
+}
+
+@font-face {
+    font-family: "blah";
+    src: url('../fonts/Blah!.ttf') format("truetype");
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    --cor-primaria: #ffa500;
+    --cor-secundaria: rgb(0, 0, 0);
+    --cor-titulo: red;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'blah';
+}
+/*          nav             */
+nav {
     width: 100%;
-    z-index: 100;
+    height: 7vh;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
     background: var(--cor-secundaria);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.178);  
+    z-index: 10000;
+    color: white;
+}
+.topNome{
+    color: var(--cor-primaria);
+    font-family: 'pac';
+    position: relative;
+    align-self:auto;
+    font-size: 25px;
+    line-height: 100%;
   }
 /*          Corpo             */
 
-.container{
+.container {
     width: 100%;
-    min-height:100vh;
-    display:flex;
+    min-height: 100vh;
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     margin-top: 7vh;
-    background:var(--cor-primaria);
+    background: var(--cor-primaria);
 }
+
 /*      Descrição do projeto        */
-.descProjeto{
+.descProjeto {
     width: 100%;
-    min-height: 40vh;
+    min-height: 10vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    background:var(--cor-secundaria);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
-    overflow: hidden;
-    padding-top: 50px;
+    background: var(--cor-secundaria);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
+   
 }
-.dadosProjeto{
+
+.dadosProjeto {
     text-align: center;
     width: 100%;
 }
-.dadosProjeto h1{
+
+.dadosProjeto h1 {
     font-size: calc(40px + 3vw);
     color: #fff;
     margin: 10px;
 }
-.dadosProjeto p{
+
+.dadosProjeto p {
     font-size: calc(16px + 1vw);
     color: #fff;
     margin: 10px;
 }
-.tec{
+
+.tec {
     width: 100%;
+    min-height: 100px;
     color: #fff;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding-bottom: 20px;
+    padding: 10px;
 }
+
 .tec img {
     width: 90px;
+    height: 90px;
 }
+
 /*              videos descritivos                  */
-.demoProjeto{
-    width: 90%;
+.demoProjeto {
+    width: 100%;
     min-height: 80vh;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 10px;
 }
 
-.demoProjeto h1{
+.demoProjeto h1 {
     color: #fff;
     font-size: calc(40px + 1vw);
     margin: 30px;
     text-transform: uppercase;
     text-align: center;
 }
+
 /*              videos descritivos   Desktop               */
-.videoPcDesc{
+.videoPcDesc {
     width: 100%;
     max-width: 900px;
     min-height: 40vh;
@@ -92,15 +129,19 @@
     align-items: center;
     flex-direction: column;
     margin: 0 auto;
-    
+
 }
 
-.videoPcDesc video{
+.videoPcDesc video {
     margin: 30px 0;
     width: 100%;
+    background-color: rgb(0, 0, 0);
+    padding: 15px 2px;
+    border-radius: 10px;
     box-shadow: 0 0 20px 9px rgba(0, 0, 0, 0.8);
 }
-.videoPcDesc ul{
+
+.videoPcDesc ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -109,38 +150,46 @@
     border-radius: 10px;
     overflow: hidden;
 }
-.btMais{
+
+.btMais {
     height: 100px;
-    width: 100%;  
+    width: 100%;
     display: flex;
 }
-.btMais li{
+
+.btMais li {
     height: 100%;
-    width: 100%;  
+    width: 100%;
 }
-.btMais li a{
-    color: #fff;
+
+.btMais li a {
+    color: var(--cor-primaria);
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background:var(--cor-secundaria);
+    background: var(--cor-secundaria);
     font-weight: bold;
-    font-size: calc(20px + 2vw);
-    
+    font-size: calc(15px + 2vw);
+    transition: 0.5s;
+
 }
-.btMais li a:hover{
-    color: #fff;
-    background:rgba(0, 0, 0, 0.6);
+
+.btMais li a:hover {
+    color:var(--cor-secundaria);
+    background: var(--cor-primaria);
+    box-shadow: inset 0 0 20px var(--cor-secundaria);
 }
+
 /*              videos descritivos      Smartphone            */
-.videoMobileDesc{
-    max-width:  225px;
+.videoMobileDesc {
+    max-width: 225px;
     margin: 0 auto;
-    
+
 }
-.videoMobileDesc video{
+
+.videoMobileDesc video {
     width: 100%;
     box-shadow: 0 0 20px 9px rgba(0, 0, 0, 0.8);
     background-color: rgb(0, 0, 0);
@@ -149,3 +198,99 @@
     position: relative;
 }
 
+/*            Footer               */
+
+footer {
+    width: 100%;
+    min-height: 30vh;
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.boxFooter {
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footerNome {
+    font-size: 40px;
+    font-family: "pac";
+    position: relative;
+    cursor: pointer;
+    transition: color 1s ease-in-out;
+    letter-spacing: 10px;
+    color: var(--cor-primaria);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.footerNome::before {
+    content: var(--letra);
+    position: absolute;
+    filter: blur(15px);
+    font-weight: bold;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.redes-sociais {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.redes-sociais li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    height: 100px;
+
+    margin: 0 10px;
+    font-size: calc(20px + 1vw);
+    font-weight: bold;
+    list-style: none;
+    color: var(--cor-primaria);
+    border-radius: 20px;
+}
+
+.redes-sociais li a:hover {
+    animation: subir 0.5s ease alternate infinite;
+}
+
+.redes-sociais li a ion-icon {
+    font-size: 50px;
+    z-index: 1000;
+}
+
+.redes-sociais li p {
+    width: 100%;
+    height: 40;
+    line-height: 100%;
+    padding: 10px;
+    color: var(--cor-primaria);
+    transition: 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.redes-sociais li p:hover {
+    border-radius: 20px;
+    background: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
