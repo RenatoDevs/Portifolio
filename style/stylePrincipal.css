@@ -53,6 +53,28 @@ section:nth-child(even) {
   background-color: var(--cor-secundaria);
 }
 
+
+section:nth-child(odd) .btMais {
+  background-color: var(--cor-secundaria);
+  color: white;
+}
+
+section:nth-child(even) .btMais {
+  background-color: var(--cor-primaria);
+  color: white;
+}
+
+section:nth-child(odd).certificado .item {
+  background-color: var(--cor-secundaria);
+  color: white;
+}
+
+section:nth-child(even).certificado .item {
+  background-color: var(--cor-primaria);
+  color: black;
+}
+
+
 .titulo {
   font-size: calc(20px + 2vw);
   font-weight: bold;
@@ -66,38 +88,41 @@ section:nth-child(even) {
 /*        Sobre         */
 .sobre {
   margin-top: -25vh;
-  padding-top: 20vh;
+  padding: 20vh 10px 50px 10px;
+
 }
 
 .box-sobre {
-  width: 100%;
-  max-width: 1350px;
-  display: inline-block;
+  max-width: 1400px;
   border-radius: 10px;
-  padding-top: 40px;
-  /* background-color: rgba(0, 0, 0, 0.24);
-  box-shadow:0 0 20px rgba(0, 0, 0, 0.918) */
+  padding: 10px 0;
+  background-color: rgb(221, 221, 221);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.918),
+    inset 0 0 10px rgba(0, 0, 0, 0.486);
 }
 
 .box-sobre img {
-  max-width: 350px;
+  max-width: 320px;
   overflow: hidden;
   object-fit: cover;
   border-radius: 20px;
+  margin: 10px;
   float: left;
-  margin: 0 20px 30px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.918);
 }
 
 .box-sobre p {
-  font-size: calc(14px + 0.5vw);
-  text-align: justify;
-  margin: 10px 0;
+  max-width: 1200px;
+  font-size: calc(12px + 0.5vw);
+  text-align: left;
+  margin: 20px 0;
   padding: 0 15px;
   font-weight: 600;
+  position: relative;
 }
 
 /*              Conhecimentos             */
-.estudos{
+.estudos {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -106,6 +131,7 @@ section:nth-child(even) {
   padding: 0 10px;
   gap: 10px;
 }
+
 .box-linguagem {
   width: 100%;
   max-width: 400px;
@@ -116,29 +142,35 @@ section:nth-child(even) {
   align-items: center;
   flex-wrap: wrap;
   background-color: gainsboro;
+  box-shadow:
+    inset 0 0 10px rgba(0, 0, 0, 0.486);
 }
-.conhecimento h2{
+
+.conhecimento h2 {
   color: white;
   width: 100%;
   text-align: center;
   padding: 10px;
   margin-bottom: 10px;
-  border-radius: 10px 10px 0 0 ;
+  border-radius: 10px 10px 0 0;
   background-color: gray;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.918),
+    inset 0 0 20px rgba(0, 0, 0, 0.486);
 }
+
 .box-linguagem img {
   width: 50px;
   height: 50px;
   transition: 0.5s;
 }
+
 .box-linguagem img:hover {
   transform: scale(1.3);
 }
+
 /*         Certificados        */
 .certificado .item {
-  background-color: var(--cor-secundaria);
-  color: #fff;
-  /* box-shadow: 0 0 20px white; */
+  text-transform: uppercase;
 }
 
 /*           Projetos          */
@@ -162,7 +194,7 @@ section:nth-child(even) {
   flex: 1 1 400px;
   max-width: 400px;
   position: relative;
-  background: rgba(255, 255, 255, 0.603);
+  background: rgba(255, 255, 255, 0.884);
   box-shadow: 0 8px 32px 10px rgba(0, 0, 0, 0.37);
   border-radius: 10px;
   overflow: hidden;
@@ -173,10 +205,13 @@ section:nth-child(even) {
   transform: scale(1.1);
 }
 
+.imgProjeto {
+  max-height: 250px;
+  overflow: hidden;
+}
+
 .imgProjeto img {
   width: 100%;
-  max-height: 300px;
-  flex: 1 1 100px;
 }
 
 .descProjeto {
@@ -188,18 +223,98 @@ section:nth-child(even) {
 }
 
 .subTitulo {
-  font-size: 30px;
+  font-size: 25px;
   margin: 10px;
 }
 
 .descProjeto .btMais {
   width: 100%;
-  background: var(--cor-primaria);
   text-decoration: none;
-  color: #ffffff;
   padding: 10px;
   margin-top: 10px;
   font-size: 30px;
   font-weight: bold;
 }
+
 /*Area Javascript*/
+
+.container-js {
+  width: 100%;
+  max-width: 1400px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.top-js {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+
+  background-color: rgb(29, 29, 29);
+}
+
+.clock {
+  color: white;
+  font-size: 50px;
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grade-projetos-js {
+  padding: 50px 10px 0 10px;
+  width: 100%;
+  min-height: 50vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.projeto-js {
+  width: 100%;
+  max-width: 400px;
+  height: 610px;
+  background-color: rgb(39, 33, 25);
+  margin-top: 20px;
+  box-shadow:0 0 20px rgb(0, 0, 0);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:600px) {
+  .box-sobre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}

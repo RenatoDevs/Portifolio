@@ -1,0 +1,135 @@
+.jogo-da-velha {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.685);
+}
+.jogo-da-velha h1{
+  width: 100%;
+  font-size: 30px;
+  color: white;
+  padding: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  background-color: orange;
+}
+.jogo-da-velha .stage {
+  padding: 10px;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.jogo-da-velha .square {
+  background-color: rgb(255, 166, 0);
+  width: 90px;
+  height: 90px;
+  display: inline-block;
+  position: relative;
+  font-size: 100px;
+  transition: 300ms ease-in-out ;
+  color: white;
+  font-weight: bold;
+  text-shadow: 0 2px 10px black;
+}
+.jogo-da-velha .square:hover{
+  filter: contrast(200%);
+  box-shadow: 0 0 5px 1px orange;
+  transform: scale(105%);
+  
+}
+
+.jogo-da-velha .o::after {
+  content: "O";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.jogo-da-velha .x::after {
+  content: "X";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.jogo-da-velha #restart{
+  width: 100%;
+  height: 40px;
+  border: none;
+  background-color: rgb(31, 31, 31);
+  color: white;
+  font-size: 25px;
+}
+
+.jogo-da-velha .current-player{
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:10px;
+}
+.jogo-da-velha .vez{
+  background-color: orange;
+  box-shadow: 0 0 20px 2px orange;
+  transition: 500ms ease-in-out;
+}
+.jogo-da-velha .current-player p{
+  width: 100%;
+  min-height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 50px
+}
+
+.jogo-da-velha .info{
+  width: 100%;
+  min-height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+}
+
+.jogo-da-velha .info button{
+  background: orange;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+}
+.jogo-da-velha .vencedor{
+  width: 100%;
+  min-height: 50px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
+

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/styleGameMemoria.css">
+    <title>Memória</title>
+</head>
+
+<body onload="startGame()">
+    <div id="gameOver" class="gameOver">
+        <div>
+            Parabéns, você completou o jogo !!!!
+        </div>
+        <button id="restart" onclick="restart()"> Jogar Novamente</button>
+    </div>
+
+    <section class="container">
+        
+        </div>
+        <div id="start" class="start">
+            <div class="descricao">
+                <h1>Jogo da memoria</h1>
+                <p>Jogo desenvolvido durante o modulo de javascrip no curso do Programador Br</p>
+            </div>
+
+            <div class="temas">
+                <div class="tema">
+                    <img src="./assets/temas/marvel/iron.png" alt="">
+                    <a href="./game-memoria.html" href="#gameBoard" id="marvel">
+                        <button id="marvel" class="btn">Marvel</button>
+                    </a>
+                </div>
+                <div class="tema">
+                    <img src="./assets/temas/tech/react.png" alt="">
+                    <a href="./game-memoria.html" href="#gameBoard" id="tech">
+                        <button id="teck" class="btn">Tech</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="gameBoard" class="gameBoard"></div>
+    </section>
+    <footer>
+        <span>	&copy;Renato dos Santos</span>
+
+
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+    <script src="./scriptTemasGameMemoria.js"></script>
+
+    <script src="./scriptGameMemoria.js"></script>
+
+    <script src="./scriptViewGameMemoria.js"> </script>
+
+</body>
+
+</html>
