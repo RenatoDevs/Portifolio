@@ -5,14 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style/styleHeader.css">
-    <link rel="stylesheet" href="./style/stylePrincipal.css">
-    <link rel="stylesheet" href="./style/styleNav.css">
+    <link rel="stylesheet" href="./style/principal.css">
+    <link rel="stylesheet" href="./style/style-header.css">
+    <link rel="stylesheet" href="./style/style-pagina-principal.css">
+    <link rel="stylesheet" href="./style/style-nav.css">
     <link rel="stylesheet" href="./style/footer.css">
+    <link rel="stylesheet" href="./style/load.css">
 
     <!-- links style rojetos js -->
+    <link rel="stylesheet" href="./style/clock.css">
     <link rel="stylesheet" href="./projetos/jogo-da-velha/jogo-da-velha.css">
-    <link rel="stylesheet" href="./projetos/jokenpo/styleJokenpo.css">
+    <link rel="stylesheet" href="./projetos/jokenpo/style-jokenpo.css">
     <link rel="stylesheet" href="./projetos/gameMemoria/style/style-game-tema.css">
     <!-- icones -->
     <link rel="icon" href="../imagens/icons/rsIcon.png" type="image/png">
@@ -22,6 +25,13 @@
 </head>
 
 <body onload="iniciarDados()">
+    <div class="load">
+        <div class="logo-animation">
+            <p class="r" style="--letra:'r'">r</p>
+            <p class="s" style="--letra: 's'">s</p>
+        </div>
+    </div>
+
     <header id="header">
         <nav>
             <span class="topNome">Renato Santos</span>
@@ -67,14 +77,14 @@
             </li>
         </ul>
         <div class="scroll">
-            <img src="./logos/keyboard_arrow_down_white_24dp.svg" alt="">
+            <a href="#sobre"><img src="./logos/keyboard_arrow_down_white_24dp.svg" alt=""></a>
         </div>
 
     </header>
     <main>
         <section id="sobre" class="sobre">
             <p class="titulo">Sobre</p>
-            
+
             <div class="box-sobre">
                 <img src="./imagens/fotos/eu2.jpg" alt="">
                 <p>Olá eu sou Renato dos Santos seja Bem-vindo ao meu portifólio, aqui vou dispor um pouco sobre mim,
@@ -84,7 +94,8 @@
                 <p>
                     Bom sobre mim, eu tenho 24 anos, mas desde criança sempre fui apaixonado por tecnologia, ver os
                     ganhos que ao longo dos anos ela vem trazendo a sociedade é simplesmente incrível, confesso que
-                    os últimos avanços que tivemos como a inteligência artificial, robôs e afins estão cada  um tanto assustadores, mas ainda assim acho incrível e acredito que com consciência e sabedoria ela
+                    os últimos avanços que tivemos como a inteligência artificial, robôs e afins estão cada um tanto
+                    assustadores, mas ainda assim acho incrível e acredito que com consciência e sabedoria ela
                     vai nos levar muito longe.
                 </p>
                 <p>
@@ -97,7 +108,7 @@
         <section id="conhecimento" class="conhecimento">
             <p class="titulo">Conhecimento</p>
             <div class="estudos">
-                
+
                 <div class="box-linguagem">
                     <h2>Tenho conhecimento</h2>
                     <img src="./imagens/techs/html.png" alt="">
@@ -105,13 +116,13 @@
                     <img src="./imagens/techs/javascript.png" alt="">
                     <img src="./imagens/techs/github.png" alt="">
                 </div>
-                
+
                 <div class="box-linguagem">
                     <h2>Estudando</h2>
                     <img src="./imagens/techs/javascript.png" alt="">
                     <img src="./imagens/techs/firebase.png" alt="">
                 </div>
-                
+
                 <div class="box-linguagem">
                     <h2>Pretendo estudar</h2>
                     <img src="./imagens/techs/bootstrap.png" alt="">
@@ -125,13 +136,27 @@
         <section>
             <div class="container-js">
                 <div class="top-js">
-                    <div class="box-clock">
-                        <div class="clock"></div>
+                    <div class="clocks">
+                        <div class="clock-digital">
+                            <div class="hour">
+                                <div class="hr" id="hr"></div>
+                            </div>
+                            <div class="min">
+                                <div class="mn" id="mn"></div>
+                            </div>
+                            <div class="sec">
+                                <div class="sc" id="sc"></div>
+                            </div>
+                        </div>
+                        <div class="box-clock-analog">
+                            <div class="clock-analog"></div>
+                        </div>
                     </div>
                     <p class="titulo">Area Javascript</p>
                 </div>
                 <div class="grade-projetos-js">
                     <div class="projeto-js">
+                        <!-- jogo da velha -->
                         <div class="jogo-da-velha">
                             <h1>Jogo da Velha</h1>
                             <div class="current-player">
@@ -169,12 +194,12 @@
                                 <div id="option-robot" class="option-robot"></div>
                             </div>
                             <div id="placar" class="placar"></div>
-                            
-                            <div class="player" >&#x1F603;
-                                
+
+                            <div class="player">&#x1F603;
+
                             </div>
                             <div class="option-player">
-                                <button id="0" class="option">	&#x270A;</button>
+                                <button id="0" class="option"> &#x270A;</button>
                                 <button id="1 " class="option">&#x1F590;</button>
                                 <button id="2" class="option">&#x270C;</button>
                             </div>
@@ -186,18 +211,20 @@
                             <h1>Jogo Da Memoria</h1>
                             <p>Escolha um tema para poder jogar</p>
                         </div>
-                        
+
                         <div id="game-memoria" class="temas">
-                            
+
                             <div class="tema">
-                                <img src="./projetos/gameMemoria/assets/temas/marvel/iron.png" alt="">
+
                                 <a href="./projetos/gameMemoria/game-memoria.html" href="#gameBoard" id="marvel">
+                                    <img src="./projetos/gameMemoria/assets/temas/marvel/iron.png" alt="">
                                     <button id="marvel" class="btn">Marvel</button>
                                 </a>
                             </div>
                             <div class="tema">
-                                <img src="./projetos/gameMemoria/assets/temas/tech/react.png" alt="">
+
                                 <a href="./projetos/gameMemoria/game-memoria.html" href="#gameBoard" id="tech">
+                                    <img src="./projetos/gameMemoria/assets/temas/tech/react.png" alt="">
                                     <button id="teck" class="btn">Tech</button>
                                 </a>
                             </div>
@@ -205,8 +232,8 @@
                     </div>
                 </div>
             </div>
-            
-            
+
+
         </section>
         <!-- Certificado -->
         <section id="certificado" class="certificado">
@@ -242,20 +269,21 @@
             </ul>
         </div>
     </footer>
+    <!-- loader -->
+    <script src="./scripts/pre-loader.js"></script>
     <!-- projetos js -->
-        <!-- jogo da velha -->
-        <script src="./projetos/jogo-da-velha/jogo-da-velha.js"></script>
-        <script src="./projetos/jogo-da-velha//interface-jogo-da-velha.js"></script>
-        <!-- jokempô -->
-        <script src="./projetos/jokenpo/jokenpoGame.js"></script>
-        <!-- Jogo da Memoria -->
-        <script src="./projetos/gameMemoria/scriptGameMemoria.js"></script>
-        <script src="./projetos/gameMemoria/scriptTemasGameMemoria.js"></script>
-        <script src="./projetos/gameMemoria/scriptViewGameMemoria.js"></script>
+    <!-- jogo da velha -->
+    <script src="./projetos/jogo-da-velha/jogo-da-velha.js"></script>
+    <script src="./projetos/jogo-da-velha//interface-jogo-da-velha.js"></script>
+    <!-- jokempô -->
+    <script src="./projetos/jokenpo/jokenpoGame.js"></script>
+    <!-- Jogo da Memoria -->
+    <script src="./projetos/gameMemoria/scriptTemasGameMemoria.js"></script>
+    
 
 
 
-    <script src="./projetos/relogio/relogio.js"></script>
+    <script src="./scripts/relogio.js"></script>
     <!-- auto -->
     <script src="./scripts/auto-certificados.js"></script>
     <script src="./scripts/auto-projetos.js"></script>

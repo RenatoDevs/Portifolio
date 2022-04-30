@@ -1,25 +1,6 @@
-@font-face {
-    font-family: "pac";
-    src: url("../fonts/PAC-FONT.TTF") format("truetype");
+body{
+    overflow: hidden;
 }
-
-@font-face {
-    font-family: "blah";
-    src: url('../fonts/Blah!.ttf') format("truetype");
-}
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    --cor-primaria: #ffa500;
-    --cor-secundaria: rgb(0, 0, 0);
-    --cor-titulo: red;
-    list-style: none;
-    text-decoration: none;
-    font-family: 'blah';
-}
-/*          nav             */
 nav {
     width: 100%;
     height: 7vh;
@@ -29,9 +10,8 @@ nav {
     align-items: center;
     top: 0;
     background: var(--cor-secundaria);
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.178);  
-    z-index: 10000;
     color: white;
+    z-index: 10;
 }
 .topNome{
     color: var(--cor-primaria);
@@ -50,7 +30,7 @@ nav {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 7vh;
+    padding-top: 7vh;
     background: var(--cor-primaria);
 }
 
@@ -63,7 +43,7 @@ nav {
     align-items: center;
     flex-direction: column;
     background: var(--cor-secundaria);
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
+    box-shadow: 0 0 30px var(--cor-shadow);
    
 }
 
@@ -135,10 +115,10 @@ nav {
 .videoPcDesc video {
     margin: 30px 0;
     width: 100%;
-    background-color: rgb(0, 0, 0);
+    background-color: var(--cor-secundaria);
     padding: 15px 2px;
     border-radius: 10px;
-    box-shadow: 0 0 20px 9px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 20px 9px var(--cor-shadow);
 }
 
 .videoPcDesc ul {
@@ -191,8 +171,8 @@ nav {
 
 .videoMobileDesc video {
     width: 100%;
-    box-shadow: 0 0 20px 9px rgba(0, 0, 0, 0.8);
-    background-color: rgb(0, 0, 0);
+    box-shadow: 0 0 20px 9px var(--cor-shadow);
+    background-color: var(--cor-secundaria);
     padding: 15px 1px;
     border-radius: 10px;
     position: relative;
@@ -209,7 +189,7 @@ footer {
     align-items: center;
     flex-direction: column;
     position: relative;
-    background-color: rgb(0, 0, 0);
+    background-color: var(--cor-secundaria);
     color: white;
 }
 
@@ -274,7 +254,7 @@ footer {
 
 .redes-sociais li a ion-icon {
     font-size: 50px;
-    z-index: 1000;
+    z-index: 10;
 }
 
 .redes-sociais li p {

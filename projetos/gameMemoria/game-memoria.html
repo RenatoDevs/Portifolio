@@ -9,37 +9,58 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style/styleGameMemoria.css">
+    <link rel="stylesheet" href="./style/style-game-memoria.css">
+    <link rel="stylesheet" href="../../style/load.css">
+    <link rel="stylesheet" href="../../style/principal.css">
+    <link rel="stylesheet" href="../../style/style-paginas.css">
     <title>Memória</title>
 </head>
 
 <body onload="startGame()">
+    <div class="load">
+        <div class="logo-animation">
+            <p class="r" style="--letra:'r'">r</p>
+            <p class="s" style="--letra: 's'">s</p>
+        </div>
+    </div>
     <div id="gameOver" class="gameOver">
         <div>
             Parabéns, você completou o jogo !!!!
         </div>
         <button id="restart" onclick="restart()"> Jogar Novamente</button>
     </div>
-
-    <section class="container">
-        
+    <header>
+        <div class="descProjeto">
+            <div class="dadosProjeto">
+                <h1>BarberShop</h1>
+                <p>Site criado como modelo para uma Barbearia</p>
+            </div>
+            <ul class="tec">
+                <li><img src="../../imagens/techs/html.png" alt=""></li>
+                <li><img src="../../imagens/techs/css.png" alt=""></li>
+                <li><img src="../../imagens/techs/javascript.png" alt=""></li>
+            </ul>
         </div>
+    </header>
+    <section class="game-box">
         <div id="start" class="start">
             <div class="descricao">
                 <h1>Jogo da memoria</h1>
                 <p>Jogo desenvolvido durante o modulo de javascrip no curso do Programador Br</p>
             </div>
+            
 
             <div class="temas">
                 <div class="tema">
-                    <img src="./assets/temas/marvel/iron.png" alt="">
                     <a href="./game-memoria.html" href="#gameBoard" id="marvel">
+                        <img src="./assets/temas/marvel/iron.png" alt="">
                         <button id="marvel" class="btn">Marvel</button>
                     </a>
                 </div>
                 <div class="tema">
-                    <img src="./assets/temas/tech/react.png" alt="">
+                    
                     <a href="./game-memoria.html" href="#gameBoard" id="tech">
+                        <img src="./assets/temas/tech/react.png" alt="">
                         <button id="teck" class="btn">Tech</button>
                     </a>
                 </div>
@@ -53,25 +74,14 @@
 
 
     </footer>
-
-
-
-
-
-
-
-
-
-
-
     
+    <script src="./script-temas-game-memoria.js"></script>
 
+    <script src="./script-game-memoria.js"></script>
 
-    <script src="./scriptTemasGameMemoria.js"></script>
+    <script src="./script-view-game-memoria.js"> </script>
 
-    <script src="./scriptGameMemoria.js"></script>
-
-    <script src="./scriptViewGameMemoria.js"> </script>
+    <script src="../../scripts/pre-loader.js"></script>
 
 </body>
 

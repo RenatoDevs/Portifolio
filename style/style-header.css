@@ -1,7 +1,3 @@
-@font-face {
-  font-family: "pac";
-  src: url("../fonts/PAC-FONT.TTF") format("truetype");
-}
 header {
   width: 100%;
   min-height: 130vh;
@@ -33,6 +29,9 @@ header::before {
   position: relative;
   background: url(../imagens/) repeat-y;
   background-size: cover ;
+}
+.scroll a {
+  width: 100%;
 }
 
 .scroll img {

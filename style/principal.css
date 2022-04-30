@@ -1,0 +1,43 @@
+@font-face {
+    font-family: "pac";
+    src: url("../fonts/PAC-FONT.TTF") format("truetype");
+}
+
+@font-face {
+    font-family: "blah";
+    src: url('../fonts/Blah!.ttf') format("truetype");
+}
+@font-face {
+    font-family: "school";
+    src: url('../fonts/Freshman.ttf') format("truetype");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --cor-primaria: #ff8717;
+    --cor-secundaria: #00070A;
+    --cor-terciaria:#333939;
+    --cor-quartenaria:#D5C6BC;
+    --cor-titulo: #ff0000;
+    --cor-shadow:rgba(0, 0, 0, 0.918);
+    --cor-shadow-2:#5b0b0cb0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  body::-webkit-scrollbar{
+      width: 15px;
+  }
+  body::-webkit-scrollbar-track{
+    background-color: var(--cor-secundaria);
+}
+body::-webkit-scrollbar-thumb{
+    background-color: var(--cor-primaria);
+    border-radius: 10px;
+    border: 2px solid;
+}
+
