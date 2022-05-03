@@ -1,11 +1,12 @@
 header {
   width: 100%;
-  min-height: 130vh;
+  min-height: 110vh;
+  padding-top: 10vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  z-index: 100;
+  z-index: 10;
 }
 header::before {
   content: "";
@@ -13,9 +14,9 @@ header::before {
   top: 0;
   left: 0;
   width: 100%;
-  min-height: 130vh;
+  min-height: 110vh;
   background: var(--cor-secundaria);
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+  /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%); */
   z-index: -1;
 }
 .scroll {
@@ -139,6 +140,7 @@ header::before {
   align-items: center;
   flex-wrap: wrap;
   height: 100%;
+  z-index: 1;
 }
 .redes-sociais li a{
   display: flex;
@@ -160,7 +162,7 @@ header::before {
 }
 .redes-sociais li a ion-icon{
   font-size: 50px;
-  z-index: 1000;
+  
   
 }
 .redes-sociais li p{

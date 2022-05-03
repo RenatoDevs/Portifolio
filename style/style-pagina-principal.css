@@ -68,8 +68,8 @@ section:nth-child(even).certificado .item {
 
 /*        Sobre         */
 .sobre {
-  margin-top: -25vh;
-  padding: 20vh 10px 50px 10px;
+  /* margin-top: -25vh; */
+  padding: 50px 10px 50px 10px;
 
 }
 

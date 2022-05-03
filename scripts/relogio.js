@@ -21,7 +21,7 @@ setInterval(()=>{
     let mn = day.getMinutes();
     let ss = day.getSeconds();
     clockContainer.innerHTML = getClockHTML(hh, mn, ss);
-},1000)
+})
 
 
 setInterval(() => {

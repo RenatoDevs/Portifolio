@@ -184,7 +184,7 @@ footer{
 }
 
 @media (max-width:950px) {
-    .container{
+    .game-box{
         
         display: grid;
         grid-template-columns: 1fr;        
