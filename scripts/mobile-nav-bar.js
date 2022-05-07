@@ -1,41 +1,46 @@
-class MobileNavBar{
-    constructor(mobileMenu,navList,navLinks){
+class MobileNavBar {
+    constructor(mobileMenu, navList, navLinks) {
         this.mobileMenu = document.querySelector(mobileMenu);
         this.navList = document.querySelector(navList);
         this.navLinks = document.querySelectorAll(navLinks);
         this.activeClass = "active";
         //usando metodo bind para o this não perder a referencia
         this.handleClick = this.handleClick.bind(this);
-
     }
-    animateLinks(){
-        this.navLinks.forEach((link,index) =>{
-            link.style.animation 
+    animateLinks() {
+        this.navLinks.forEach((link, index) => {
+            link.style.animation
                 ? (link.style.animation = "")
                 : (link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`)
-                
+
         });
     }
-
-    handleClick(){
+    handleClick() {
         console.log(this);
         this.navList.classList.toggle(this.activeClass);
         this.mobileMenu.classList.toggle(this.activeClass);
+        this.linkOpen()
         //animação dos links
         this.animateLinks();
     }
 
 
-    addClickEvent(){
+    addClickEvent() {
         this.mobileMenu.addEventListener("click", this.handleClick);
     }
 
-    init(){
-        if(this.mobileMenu){
+    init() {
+        if (this.mobileMenu) {
             this.addClickEvent();
         }
         return this;
     }
+    linkOpen () {
+            this.navLinks.forEach((item) => {
+                item.addEventListener('click', this.handleClick)
+            })
+        
+        };
 }
 //letra inicial maiuscula igual o nome da classe
 const mobileNavBar = new MobileNavBar(
@@ -45,4 +50,4 @@ const mobileNavBar = new MobileNavBar(
     ".navList li"
 );
 
-mobileNavBar .init();
+mobileNavBar.init();

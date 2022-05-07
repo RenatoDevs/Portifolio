@@ -36,11 +36,12 @@
         <nav>
             <span class="topNome">Renato Santos</span>
             <ul class="navList">
-                <li><a href="#header">Home</a></li>
-                <li><a href="#sobre">About</a></li>
-                <li><a href="#conhecimento">Skills</a></li>
-                <li><a href="#certificado">Certified</a></li>
-                <li><a href="#projetos">Projects</a></li>
+                <li class="item-menu"><a href="#header">Inicio</a></li>
+                <li class="item-menu"><a href="#sobre">Sobre Mim</a></li>
+                <li class="item-menu"><a href="#conhecimento">Conhecimento</a></li>
+                <li class="item-menu"><a href="#certificado">certificado</a></li>
+                <li class="item-menu"><a href="#projetos">Projetos</a></li>
+                <li class="item-menu"><a href="#projetos">Contato</a></li>
             </ul>
 
             <div class="mobileMenu">
@@ -95,10 +96,6 @@
                     assustadores, mas ainda assim acho incrível e acredito que com consciência e sabedoria ela
                     vai nos levar muito longe.
                 </p>
-                <p>
-                    Sou formado em Análise e Desenvolvimento de Sistemas pela Uninove, estou estudando as
-                    tecnologias do Front-End como HTML, CSS, Javascript e em breve React JS.
-                </p>
             </div>
         </section>
         <!-- Conhecimento -->
@@ -129,6 +126,7 @@
             </div>
 
         </section>
+        
         <!-- area js -->
         <section>
             <div class="container-js">
@@ -212,36 +210,48 @@
                         <div id="game-memoria" class="temas">
 
                             <div class="tema">
-
-                                <a href="./projetos/gameMemoria/game-memoria.html" href="#gameBoard" id="marvel">
+                                <a href="./projetos/gameMemoria/game-memoria.html"  id="marvel">
                                     <img src="./projetos/gameMemoria/assets/temas/marvel/iron.png" alt="">
                                     <button id="marvel" class="btn">Marvel</button>
                                 </a>
                             </div>
                             <div class="tema">
 
-                                <a href="./projetos/gameMemoria/game-memoria.html" href="#gameBoard" id="tech">
+                                <a href="./projetos/gameMemoria/game-memoria.html"  id="tech">
                                     <img src="./projetos/gameMemoria/assets/temas/tech/react.png" alt="">
                                     <button id="tech" class="btn">Tech</button>
                                 </a>
-                            </div>
+                            </div> 
+                            
+                            <div class="tema">
+                                <a href="./projetos/gameMemoria/game-memoria.html"  id="dragonball">
+                                    <img src="./projetos/gameMemoria/assets/temas/dragonball/goku.png" alt="">
+                                    <button id="dragonball" class="btn">Dragon Ball</button>
+                                </a>
+                            </div>                  
                         </div>
                     </div>
                 </div>
             </div>
-
-
-        </section>
-        <!-- Certificado -->
-        <section id="certificado" class="certificado">
-            <p class="titulo">Certificados</p>
-            <div id="box-certificados" class="box-itens"></div>
         </section>
         <!-- Projetos -->
         <section id="projetos" class="projetos">
             <p class="titulo">Projetos</p>
             <div class="box-itens" id="box-projetos">
         </section>
+         <!-- Certificado -->
+         <section id="certificado" class="certificado">
+            <p class="titulo">Certificados</p>
+            <div id="box-certificados" class="box-itens"></div>
+        </section>
+        <!-- Curriculo -->
+        <!-- <section id="curriculo">
+
+        </section> -->
+        <!-- Contato -->
+        <!-- <section class="contato">
+
+        </section> -->
     </main>
     <footer>
         <div class="boxFooter">
@@ -270,9 +280,9 @@
     <script src="./projetos/jogo-da-velha/jogo-da-velha.js"></script>
     <script src="./projetos/jogo-da-velha//interface-jogo-da-velha.js"></script>
     <!-- jokempô -->
-    <script src="./projetos/jokenpo/jokenpoGame.js"></script>
+    <script src="./projetos/jokenpo/jokenpo-game.js"></script>
     <!-- Jogo da Memoria -->
-    <script src="./projetos/gameMemoria/scriptTemasGameMemoria.js"></script>
+    <script src="./projetos/gameMemoria/script-temas-game-memoria.js"></script>
     
 
 
@@ -285,7 +295,7 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"> </script>
 
     <!-- Nav -->
-    <script src="./scripts/mobileNavBar.js"></script>
+    <script src="./scripts/mobile-nav-bar.js"></script>
 
     <script src="./scripts/script.js"></script>
 

@@ -31,7 +31,7 @@ nav {
     align-items: center;
     flex-direction: column;
     padding-top: 7vh;
-    background: var(--cor-primaria);
+    /* background: var(--cor-primaria); */
 }
 
 /*      Descrição do projeto        */

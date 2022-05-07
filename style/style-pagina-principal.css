@@ -227,6 +227,9 @@ section:nth-child(even).certificado .item {
   align-items: center;
   flex-direction: column;
   flex-wrap: wrap;
+  box-shadow: 0 0 20px var(--cor-shadow);
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .top-js {
@@ -244,6 +247,7 @@ section:nth-child(even).certificado .item {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  align-self: flex-start;
 }
 
 .clock-analog {
@@ -272,12 +276,13 @@ section:nth-child(even).certificado .item {
 
 .projeto-js {
   width: 100%;
-  max-width: 400px;
+  max-width: 330px;
   height: 610px;
   background-color:var(--cor-terciaria);
   margin-top: 20px;
   box-shadow: 0 0 20px var(--cor-shadow);
-
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 

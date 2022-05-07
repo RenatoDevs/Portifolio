@@ -1,6 +1,6 @@
 let btnMarvel = document.getElementById('marvel');
 let btnTech = document.getElementById('tech');
-
+let btnDragon = document.getElementById('dragonball');
 
 let techs = [
     'bootstrap',
@@ -27,24 +27,40 @@ let marvel = [
     'thor',
     'visao',
 ];
+let dragonball = [
+    'bios',
+    'freeza',
+    'gohan',
+    'goku',
+    'kuririn',
+    'mestre',
+    'piccolo',
+    'trunks',
+    'vegeta',
+    'whis',
+];
 
 
 
 btnMarvel.addEventListener('click', () =>{
      // aqui eu guardo o nome da pasta tema no localStorage
      localStorage.setItem('temas', JSON.stringify(marvel));
-
      localStorage.setItem('pasta', JSON.stringify('marvel'));
-     console.log('tech');
+     fundo.style.backgroundColor = 'black';
      restart();
 });
 
 btnTech.addEventListener('click', () =>{
     // aqui eu guardo o nome da pasta tema no localStorage
     localStorage.setItem('temas', JSON.stringify(techs));
-
     localStorage.setItem('pasta', JSON.stringify('tech'));
-    console.log('tech');
+    restart();
+
+});
+btnDragon.addEventListener('click', () =>{
+    // aqui eu guardo o nome da pasta tema no localStorage
+    localStorage.setItem('temas', JSON.stringify(dragonball));
+    localStorage.setItem('pasta', JSON.stringify('dragonball'));
     restart();
 
 });

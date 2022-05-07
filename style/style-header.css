@@ -1,7 +1,7 @@
 header {
   width: 100%;
   min-height: 110vh;
-  padding-top: 10vh;
+  padding-top: 15vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -78,6 +78,7 @@ header::before {
   margin: 10px;
   margin-top: -150px;
 }
+
 .nome {
   font-size: 40px;
   font-family: "pac";
@@ -86,22 +87,23 @@ header::before {
   transition: color 1s ease-in-out;
   letter-spacing: 10px;
 }
+
 .nome::before {
   content: var(--letra);
   position: absolute;
-  filter: blur(15px);
   font-weight: bold;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
+  filter: blur(15px);
 }
 .nome:nth-child(1) {
   color: var(--cor-titulo);
   font-size: calc(16px + 1vw);
   margin-bottom: -10px;
   z-index: 10;
-  animation: piscando 2s infinite;
+  animation: piscando 1.5s infinite;
   animation-delay: 0;
 }
 .nome:nth-child(2) {
@@ -208,7 +210,7 @@ header::before {
   5% {
     text-transform: lowercase;
   }
-  95% {
+  100% {
     text-transform: uppercase;
   }
 }
