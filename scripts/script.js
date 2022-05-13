@@ -3,4 +3,3 @@ function iniciarDados() {
     carregarProjetos();
     // carregarTech();
 }
-

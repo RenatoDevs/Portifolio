@@ -6,19 +6,11 @@ header {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  /* background: var(--cor-secundaria); */
   z-index: 10;
+  transition: background 1s;
 }
-header::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  min-height: 110vh;
-  background: var(--cor-secundaria);
-  /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%); */
-  z-index: -1;
-}
+
 .scroll {
   width: 100px;
   height: 150px;
@@ -214,3 +206,4 @@ header::before {
     text-transform: uppercase;
   }
 }
+
