@@ -26,9 +26,7 @@ deixarei à mostra projetos pequenos e independentes, e projetos maiores teram s
 <p align=center>
 <img src="./logos/descricao-mobile.gif"/>
 </p>
-<p>
-<img src="./logos/logo-neon.gif"/>
-</p>
+
 <p>
 <img src="./logos/descricao-portifolio.gif"/>
 </p>

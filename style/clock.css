@@ -1,4 +1,4 @@
-.clock-digital{
+.clock-analogic{
     width: 300px;
     height: 300px;
     display: flex;
@@ -15,7 +15,7 @@
     margin-bottom: 5px;
 }
 
-.clock-digital::before{
+.clock-analogic::before{
     content: '';
     position: absolute;
     width: 15px;
@@ -24,21 +24,21 @@
     border-radius: 50%;
     z-index: 5;
 }
-.clock-digital .hour,
-.clock-digital .min,
-.clock-digital .sec{
+.clock-analogic .hour,
+.clock-analogic .min,
+.clock-analogic .sec{
    position: absolute;
 }
 
-.clock-digital .hour, .hr{
+.clock-analogic .hour, .hr{
     width: 160px;
     height: 160px;
 }
-.clock-digital .min, .mn{
+.clock-analogic .min, .mn{
     width: 190px;
     height: 190px;
 }
-.clock-digital .sec, .sc{
+.clock-analogic .sec, .sc{
     width: 230px;
     height: 230px;
 }

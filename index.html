@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
 
     <link rel="stylesheet" href="./style/principal.css">
     <link rel="stylesheet" href="./style/style-header.css">
@@ -42,6 +42,7 @@
                 <li class="item-menu"><a href="#header">Inicio</a></li>
                 <li class="item-menu"><a href="#sobre">Sobre Mim</a></li>
                 <li class="item-menu"><a href="#conhecimento">Conhecimento</a></li>
+                <li class="item-menu"><a href="#area-javascript">Área-JS</a></li>
                 <li class="item-menu"><a href="#projetos">Projetos</a></li>
                 <li class="item-menu"><a href="#certificado">certificados</a></li>
                 <!-- <li class="item-menu"><a href="#projetos">Contato</a></li> -->
@@ -52,7 +53,7 @@
                 <div class="line2"></div>
                 <div class="line3"></div>
                 <div class="line4"></div>
-                
+
             </div>
         </nav>
         <div class="neon">
@@ -65,11 +66,11 @@
 
         <ul class="redes-sociais">
             <li><a href="https://www.linkedin.com/in/renato-santos-693568127/" target="_blank">
-                    <ion-icon name="logo-linkedin"></ion-icon>                  
+                    <ion-icon name="logo-linkedin"></ion-icon>
                 </a>
             </li>
             <li><a href="https://github.com/RenatoDevs" target="_blank">
-                    <ion-icon name="logo-github"></ion-icon>                  
+                    <ion-icon name="logo-github"></ion-icon>
                 </a>
             </li>
             <li>
@@ -78,13 +79,14 @@
                 </a>
             </li>
         </ul>
-        
+
         <div class="scroll">
             <a href="#sobre"><img src="./logos/keyboard_arrow_down_white_24dp.svg" alt=""></a>
         </div>
 
     </header>
     <main>
+        <!-- Sobre mim -->
         <section id="sobre" class="sobre">
             <p class="titulo">Sobre</p>
 
@@ -125,19 +127,19 @@
                 <div class="box-linguagem">
                     <h2>Pretendo estudar</h2>
                     <img src="./imagens/techs/bootstrap.png" alt="">
-                    
+
                     <img src="./imagens/techs/node.png" alt="">
                 </div>
             </div>
 
         </section>
-        
+
         <!-- area js -->
-        <section>
+        <section id="area-javascript">
             <div class="container-js">
                 <div class="top-js">
                     <div class="clocks">
-                        <div class="clock-digital">
+                        <div class="clock-analogic">
                             <div class="hour">
                                 <div class="hr" id="hr"></div>
                             </div>
@@ -148,11 +150,37 @@
                                 <div class="sc" id="sc"></div>
                             </div>
                         </div>
-                        <div class="box-clock-analog">
-                            <div class="clock-analog"></div>
+                        <div class="box-clock-digital">
+                            <div class="clock-digital"></div>
                         </div>
                     </div>
-                    <p class="titulo">Area Javascript</p>
+                    <div class="info-js">
+                        <p class="titulo">Area Javascript</p>
+                        <div class="box-info-js">
+                            <div class="previsao">
+                                <div class="local">
+                                    <div class="cidade"></div>
+                                    <div class="data"></div>
+                                </div>
+                                <div class="img-tempo">
+                                    <img src="#" alt="">
+                                </div>
+                                <div class="tempo-info">
+                                    <div><span class="icon-temp">🌡️</span> <span class="tempo"></span></div>
+                                    <div class="status-dia"></div>
+                                </div>
+                                <div class="min-max">                          
+                                    <div><span class="icon-temp">💧</span> <span class="umidade"></span></div>                         
+                                    <div><span class="icon-temp">🧊</span> <span class="minima"></span></div>                                   
+                                    <div><span class="icon-temp">🔥</span> <span class="maxima"></span></div>
+                                </div>
+                            </div>
+                            <div class="descricao-js">
+                                <p>Neste local vou deixar projetos livres que fiz ao longo dos meus estudos.</p>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
                 <div class="grade-projetos-js">
                     <div class="projeto-js">
@@ -215,25 +243,24 @@
                         <div id="game-memoria" class="temas">
 
                             <div class="tema">
-                                <a href="./projetos/gameMemoria/game-memoria.html"  id="marvel">
+                                <a href="./projetos/gameMemoria/game-memoria.html" id="marvel">
                                     <img src="./projetos/gameMemoria/assets/temas/marvel/iron.png" alt="">
                                     <button id="marvel" class="btn">Marvel</button>
                                 </a>
                             </div>
                             <div class="tema">
 
-                                <a href="./projetos/gameMemoria/game-memoria.html"  id="tech">
+                                <a href="./projetos/gameMemoria/game-memoria.html" id="tech">
                                     <img src="./projetos/gameMemoria/assets/temas/tech/react.png" alt="">
                                     <button id="tech" class="btn">Tech</button>
                                 </a>
-                            </div> 
-                            
+                            </div>
                             <div class="tema">
-                                <a href="./projetos/gameMemoria/game-memoria.html"  id="dragonball">
+                                <a href="./projetos/gameMemoria/game-memoria.html" id="dragonball">
                                     <img src="./projetos/gameMemoria/assets/temas/dragonball/goku.png" alt="">
                                     <button id="dragonball" class="btn">Dragon Ball</button>
                                 </a>
-                            </div>                  
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -244,8 +271,8 @@
             <p class="titulo">Projetos</p>
             <div class="box-itens" id="box-projetos">
         </section>
-         <!-- Certificado -->
-         <section id="certificado" class="certificado">
+        <!-- Certificado -->
+        <section id="certificado" class="certificado">
             <p class="titulo">Certificados</p>
             <div id="box-certificados" class="box-itens"></div>
         </section>
@@ -264,16 +291,16 @@
             <span class="footerNome" style="--letra: 'renato santos'">renato santos</span>
             <ul class="redes-sociais">
                 <li><a href="https://www.linkedin.com/in/renato-santos-693568127/" target="_blank">
-                        <ion-icon name="logo-linkedin"></ion-icon>               
+                        <ion-icon name="logo-linkedin"></ion-icon>
                     </a>
                 </li>
                 <li><a href="https://github.com/RenatoDevs" target="_blank">
-                        <ion-icon name="logo-github"></ion-icon>                      
+                        <ion-icon name="logo-github"></ion-icon>
                     </a>
                 </li>
                 <li>
                     <a href="https://github.com/RenatoDevs" target="_blank">
-                        <ion-icon name="person"></ion-icon>                       
+                        <ion-icon name="person"></ion-icon>
                     </a>
                 </li>
             </ul>
@@ -289,7 +316,7 @@
     <script src="./projetos/jokenpo/jokenpo-game.js"></script>
     <!-- Jogo da Memoria -->
     <script src="./projetos/gameMemoria/script-temas-game-memoria.js"></script>
-    
+
 
 
 
@@ -302,6 +329,8 @@
 
     <!-- Nav -->
     <script src="./scripts/mobile-nav-bar.js"></script>
+    <!-- previsão do tempo -->
+    <script src="./scripts/previsao-tempo.js"></script>
 
     <script src="./scripts/script.js"></script>
 

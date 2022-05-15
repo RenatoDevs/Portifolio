@@ -1,4 +1,4 @@
-const clockContainer = document.querySelector('.clock-analog')
+const clockContainer = document.querySelector('.clock-digital')
 /*Função para adicionar o '0' frente de um numero com uma unica casa*/
 const formatTimeUnit = unit => String(unit).length === 1 ? `0${unit}` : unit
 
